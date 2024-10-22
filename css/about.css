@@ -90,7 +90,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     color: #333333;
-    width: 1000px; 
     text-align: center;
 }
 
@@ -157,10 +156,6 @@ footer {
     }
     .container {
         flex-direction: column; 
-        padding: 0 10px;
-    }
-    .content {
-        max-width: 450px;
     }
     .content h1 {
         margin-bottom: 15px;
