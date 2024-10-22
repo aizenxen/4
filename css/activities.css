@@ -1,0 +1,143 @@
+body {
+    background: linear-gradient(#e9e7e5, #dddad5); 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    height: 100px; 
+    background-color: rgb(78, 89, 102);
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.logo img {
+    width: 100%; 
+    max-width: 400px; 
+}
+
+.welcome {
+    color: #e6d7c7a4;
+    font-size: 3.5rem;
+    display: flex;
+    flex-grow: 4;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    height: 60px; 
+    background-color: rgb(43, 52, 63);
+    display: flex; 
+    justify-content: right;
+    align-items: center;
+    padding-right: 300px;
+}
+
+.menu nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu nav ul li {
+    text-align: center;
+}
+
+.menu nav ul li a {
+    color: rgb(99, 110, 124);
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.menu nav ul li a:hover {
+    cursor: pointer;
+    color: #ffae00;
+}
+
+.menu nav ul li a.index {
+    color: #ffffff; 
+    font-size: 1.5rem; 
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.events, .news {
+    background-color: rgba(255, 255, 255, 0.418);
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #333333;
+    width: 400px; 
+    text-align: center;
+}
+
+.events h2, .news h2 {
+    margin: 0 0 15px 0; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.news-button {
+    display: block; 
+    background-color: #fdad002c; 
+    color: #333; 
+    padding: 10px; 
+    margin: 10px 0;
+    text-align: center; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+.news-button:hover {
+    background-color: #ffb52a;
+}
+
+footer {
+    display: flex;
+    color: rgb(50, 58, 92);
+    font-size: 1rem;
+    justify-content: right;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .events, .news {
+        max-width: 100%; 
+    }
+
+    .welcome {
+        font-size: 2.5rem; 
+    }
+
+    .menu nav ul li a {
+        font-size: 1.2rem; 
+    }
+}
