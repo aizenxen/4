@@ -190,48 +190,71 @@ footer {
     justify-content: right;
 }
 
-@media (max-width: 1200px) {
-    .welcome {
-        font-size: 3rem;
-    }
-
-    .menu {
-        padding-right: 100px;
-    }
-}
-
-@media (max-width: 992px) {
-    .menu {
-        flex-direction: column;
-        padding-right: 0;
-    }
-
-    .menu nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .events, .content, .news {
-        margin: 5px;
-    }
-}
-
 @media (max-width: 768px) {
-    .welcome {
-        font-size: 2rem;
-    }
-    .events, .content, .news {
-        width: 100%;
-        max-width: none;
-    }
-    .bottom-photos {
-        flex-direction: column;
-    }
-    .bottom-photos img {
-        width: 100%;
-        margin: 5px 0;
-    }
-    footer {
+    .logo {
+        display: flex;
         justify-content: center;
+        margin-bottom: 20px;
     }
+
+    .welcome {
+        font-size: 1.8rem; 
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .menu nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+    }
+    .menu nav ul li a {
+        font-size: 1.1rem; 
+        padding: 8px 10px;
+    }
+    .container {
+        flex-direction: column; /* Включаем вертикальное расположение */
+    }
+
+    .content {
+        order: 1; /* Контент отображается первым */
+    }
+
+    .content h1 {
+        margin-bottom: 15px;
+        font-size: 1.5rem; 
+    }
+    .content h2 {
+        margin-bottom: 15px;
+        font-size: 1rem; 
+    }
+    .content p {
+        margin-bottom: 15px;
+        font-size: 0.7rem; 
+    }
+    .content img {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .events, .news {
+        order: 2; /* События и новости идут после контента */
+        margin-top: 20px; /* Добавляем отступ между блоками */
+    }
+
+    .events {
+        max-width: 100%; /* Растягиваем блок на всю ширину */
+    }
+
+    .news {
+        max-width: 100%; /* Растягиваем блок на всю ширину */
+    } 
 }
+
