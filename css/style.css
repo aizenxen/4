@@ -17,12 +17,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    height: auto;
+    width: auto;
 }
 
 .logo img {
-    width: 100%; 
-    max-width: 400px; 
+    width: auto;
+    max-width: 300px;
+    height: auto;
 }
 
 .welcome {
@@ -193,10 +195,8 @@ footer {
 @media (max-width: 768px) {
     .logo {
         display: flex;
-        justify-content: center;
         margin-bottom: 20px;
     }
-
     .welcome {
         font-size: 1.8rem; 
         text-align: center;
@@ -219,20 +219,18 @@ footer {
         padding: 8px 10px;
     }
     .container {
-        flex-direction: column; /* Включаем вертикальное расположение */
+        flex-direction: column; 
     }
-
     .content {
-        order: 1; /* Контент отображается первым */
+        order: 1; 
     }
-
     .content h1 {
         margin-bottom: 15px;
         font-size: 1.5rem; 
     }
     .content h2 {
         margin-bottom: 15px;
-        font-size: 1rem; 
+        font-size: 0.9rem; 
     }
     .content p {
         margin-bottom: 15px;
@@ -243,18 +241,10 @@ footer {
         height: auto;
         margin-bottom: 15px;
     }
-
     .events, .news {
-        order: 2; /* События и новости идут после контента */
-        margin-top: 20px; /* Добавляем отступ между блоками */
+        max-width: 100%;
+        order: 2; 
+        margin-top: 20px;
     }
-
-    .events {
-        max-width: 100%; /* Растягиваем блок на всю ширину */
-    }
-
-    .news {
-        max-width: 100%; /* Растягиваем блок на всю ширину */
-    } 
 }
 
