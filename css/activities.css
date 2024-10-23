@@ -27,6 +27,8 @@ body {
     color: #e6d7c7a4;
     font-size: 3.5rem;
     display: flex;
+    justify-content: space-around;
+    width: 100%; 
 }
 
 .menu {
@@ -73,12 +75,16 @@ body {
     padding: 20px;
 }
 
-.events, .news, .content {
+.events, .news {
     background-color: rgba(255, 255, 255, 0.418);
     padding: 15px;
     margin: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 ul {
