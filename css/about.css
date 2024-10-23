@@ -14,8 +14,9 @@ body {
 }
 
 .logo {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img {
@@ -25,8 +26,7 @@ body {
 .welcome {
     color: #e6d7c7a4;
     font-size: 3.5rem;
-    text-align: center;
-    margin: 20px auto;
+    display: flex;
 }
 
 .menu {
