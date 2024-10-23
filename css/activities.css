@@ -14,9 +14,8 @@ body {
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .logo img {
@@ -26,17 +25,14 @@ body {
 .welcome {
     color: #e6d7c7a4;
     font-size: 3.5rem;
-    display: flex;
-    flex-grow: 4;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin: 20px auto;
 }
 
 .menu {
     height: 60px; 
     background-color: rgb(43, 52, 63);
     display: flex; 
-    justify-content: center;
 }
 
 .menu nav ul {
