@@ -33,6 +33,7 @@ body {
     height: 60px; 
     background-color: rgb(43, 52, 63);
     display: flex; 
+    justify-content: center;
 }
 
 .menu nav ul {
