@@ -17,14 +17,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
 }
 
 .logo img {
-    width: auto;
     max-width: 300px;
-    height: auto;
 }
 
 .welcome {
@@ -40,22 +36,20 @@ body {
     height: 60px; 
     background-color: rgb(43, 52, 63);
     display: flex; 
-    justify-content: right;
-    align-items: center;
-    padding-right: 300px;
+    justify-content: center;
 }
 
 .menu nav ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .menu nav ul li {
-    text-align: center;
+    flex-grow: 1; 
+    text-align: center; 
 }
 
 .menu nav ul li a {
@@ -67,7 +61,6 @@ body {
 }
 
 .menu nav ul li a:hover {
-    cursor: pointer;
     color: #ffae00;
 }
 
@@ -80,21 +73,15 @@ body {
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    justify-content: center;
     padding: 20px;
 }
 
-.events, .content, .news {
+.events, .news, .content {
     background-color: rgba(255, 255, 255, 0.418);
     padding: 15px;
     margin: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    color: #333333;
-}
-
-.events h2, .news h2 {
-    margin: 0 0 15px 0; 
 }
 
 ul {
@@ -107,15 +94,14 @@ ul {
     background-color: #fdad002c; 
     color: #333; 
     padding: 10px; 
-    margin: 10px 0;
     text-align: center; 
     border-radius: 5px; 
     text-decoration: none; 
-    transition: background-color 0.3s; 
+    margin-bottom: 10px;
 }
 
 .news-button:hover {
-    background-color: #ffb52a;
+    background-color: #ffb52a; 
 }
 
 footer {
@@ -123,40 +109,4 @@ footer {
     color: rgb(50, 58, 92);
     font-size: 1rem;
     justify-content: right;
-}
-
-@media (max-width: 768px) {
-    .logo {
-        display: flex;
-        margin-bottom: 20px;
-    }
-    .welcome {
-        font-size: 1.8rem; 
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .menu {
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-    }
-    .menu nav ul {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        padding: 0;
-        list-style: none;
-    }
-    .menu nav ul li a {
-        font-size: 1.1rem; 
-        padding: 8px 10px;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .events, .news {
-        max-width: 100%;
-        order: 2; 
-        margin-top: 20px;
-    }
 }

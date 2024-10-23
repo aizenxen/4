@@ -2,7 +2,7 @@ body {
     background: linear-gradient(#e9e7e5, #dddad5); 
     display: flex;
     flex-direction: column;
-    min-height: 98.3vh;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
 }
 
@@ -17,14 +17,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
 }
 
 .logo img {
-    width: auto;
     max-width: 300px;
-    height: auto;
 }
 
 .welcome {
@@ -40,22 +36,20 @@ body {
     height: 60px; 
     background-color: rgb(43, 52, 63);
     display: flex; 
-    justify-content: right;
-    align-items: center;
-    padding-right: 300px;
+    justify-content: center;
 }
 
 .menu nav ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .menu nav ul li {
-    text-align: center;
+    flex-grow: 1; 
+    text-align: center; 
 }
 
 .menu nav ul li a {
@@ -67,7 +61,6 @@ body {
 }
 
 .menu nav ul li a:hover {
-    cursor: pointer;
     color: #ffae00;
 }
 
@@ -78,8 +71,8 @@ body {
 
 .container {
     display: flex;
-    justify-content: center; 
     flex-grow: 1;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -89,23 +82,17 @@ body {
     margin: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    color: #333333;
-    text-align: center;
+    text-align: center; 
 }
 
 p {
     font-size: 1.2rem;
-    margin: 30px auto;
-    max-width: 1000px;
+    margin: 30px auto 0;
+    max-width: 800px;
 }
 
 .photo-gallery {
-    text-align: center; 
     margin-top: 30px; 
-}
-
-.photo-gallery h2 {
-    margin-bottom: 15px; 
 }
 
 .photos {
@@ -117,7 +104,6 @@ p {
 
 .photos img {
     width: 300px; 
-    height: auto; 
     border-radius: 10px; 
 }
 
@@ -126,54 +112,4 @@ footer {
     color: rgb(50, 58, 92);
     font-size: 1rem;
     justify-content: right;
-}
-
-@media (max-width: 768px) {
-    .logo {
-        display: flex;
-        margin-bottom: 20px;
-    }
-    .welcome {
-        font-size: 1.8rem; 
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .menu {
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-    }
-    .menu nav ul {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        padding: 0;
-        list-style: none;
-    }
-    .menu nav ul li a {
-        font-size: 1.1rem; 
-        padding: 8px 10px;
-    }
-    .container {
-        flex-direction: column; 
-    }
-    .content h1 {
-        margin-bottom: 15px;
-        font-size: 1.5rem; 
-    }
-    .content h2 {
-        margin-bottom: 15px;
-        font-size: 0.9rem; 
-    }
-    .content p {
-        margin-bottom: 15px;
-        font-size: 0.7rem; 
-    }
-    .photos {
-        display: block; 
-    }
-    .photos img {
-        width: 100%; 
-        margin-bottom: 15px;
-    }
 }

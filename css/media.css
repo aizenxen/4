@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+    .logo, .menu {
+        margin-bottom: 20px;
+    }
+    .welcome {
+        font-size: 1.5rem; 
+        margin-bottom: 20px;
+    }
+    .menu nav ul li a {
+        font-size: 1.1rem; 
+        padding: 8px 10px;
+    }
+    .container {
+        flex-direction: column; 
+    }
+    .content {
+        order: 1; 
+        padding: 20px;
+    }
+    .map iframe {
+        height: 250px; 
+    }
+    .content h1 {
+        font-size: 1.5rem; 
+    }
+    .content h2 {
+        font-size: 0.9rem; 
+    }
+    .content p {
+        font-size: 0.7rem; 
+    }
+    .content img {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .events, .news {
+        max-width: 100%;
+        order: 2; 
+        margin-top: 20px;
+    }
+    .photos {
+        display: block; 
+    }
+    .photos img {
+        margin-bottom: 15px;
+    }
+}
